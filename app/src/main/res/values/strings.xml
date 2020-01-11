@@ -12,4 +12,10 @@
     <string name="password_signup">Password</string>
     <string name="btn_signin_signup">Already Have An Account? Sign In Here</string>
     <string name="username_signup">UserName</string>
+    <string name="logout">LOGOUT</string>
+    <string name="delete_account_btn_profile_frag">DELETE ACCOUNT</string>
+    <string name="title_profile">Profile</string>
+    <string name="profile_name">USERNAME</string>
+    <string name="profilebio_tv">Profile Bio</string>
+    <string name="editProfile">Edit Profile</string>
 </resources>

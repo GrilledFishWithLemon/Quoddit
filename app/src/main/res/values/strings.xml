@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Quoddit</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="email_signin">Enter Your Email</string>
+    <string name="password_signin">Enter Your Password</string>
+    <string name="btn_signin">Sign In</string>
+    <string name="btn_signup_signin">Need New Account? Sign Up</string>
+    <string name="btn_signup_signup">Register</string>
+    <string name="email_signup">E-Mail</string>
+    <string name="password_signup">Password</string>
+    <string name="btn_signin_signup">Already Have An Account? Sign In Here</string>
+    <string name="username_signup">UserName</string>
+</resources>

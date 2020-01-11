@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "871117081150",
+    "firebase_url": "https://quoddit-e074f.firebaseio.com",
+    "project_id": "quoddit-e074f",
+    "storage_bucket": "quoddit-e074f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871117081150:android:1977ba4bd74c4b80341f6f",
+        "android_client_info": {
+          "package_name": "com.example.quoddit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871117081150-47oh9f9vqp1r0d6hcrb8kg2jjkvuaivt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quoddit",
+            "certificate_hash": "ed4dfd4a98296bd3641ad4af894ddd09d9c9fae8"
+          }
+        },
+        {
+          "client_id": "871117081150-mg1p330gpfbfd2ip8p579s2ojev8kskr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmaeHk0EY4CcjewfuSFRWG2u16A2sSCbQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871117081150-mg1p330gpfbfd2ip8p579s2ojev8kskr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

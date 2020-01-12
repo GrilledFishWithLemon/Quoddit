@@ -29,4 +29,3 @@ class MainActivity : AppCompatActivity() {
         navView.setupWithNavController(navController)
     }
 }
-//TODO Create Search Feature, i fucked up and had to restart all over again just now reerekamdfkldnklqw

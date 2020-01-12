@@ -6,14 +6,18 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.annotation.NonNull
+import androidx.fragment.app.FragmentActivity
 import androidx.recyclerview.widget.RecyclerView
 import com.example.quoddit.Model.User
+import com.example.quoddit.ProfileFragment
 import com.example.quoddit.R
+import com.google.firebase.auth.FirebaseUser
 
 
 class UserAdapter (private  var mContext: Context,
                    private var mUser:List<User>,
                    private var isFragment: Boolean = false) : RecyclerView.Adapter<UserAdapter.ViewHolder>(){
+    private var firebaseUser : FirebaseUser? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserAdapter.ViewHolder {
         val view = LayoutInflater.from(mContext).inflate(R.layout.user_item_layout, parent, false)
         return UserAdapter.ViewHolder(view)
@@ -27,6 +31,16 @@ class UserAdapter (private  var mContext: Context,
         var user = mUser[position]
         holder.userNameTextView.text = user.getUsername()
         holder.userBioTextView.text = user.getProfileBio()
+
+        holder.itemView.setOnClickListener(View.OnClickListener {
+            val pref = mContext.getSharedPreferences("PREFS", Context.MODE_PRIVATE).edit()
+            pref.putString("profileId", user.getUid())
+            pref.apply()
+
+            (mContext as FragmentActivity).supportFragmentManager.beginTransaction()
+                .replace(R.id.nav_host_fragment, ProfileFragment()).commit()
+
+        })
     }
     class ViewHolder (@NonNull itemView: View) : RecyclerView.ViewHolder(itemView) {
         var userNameTextView: TextView = itemView.findViewById(R.id.user_name_search)

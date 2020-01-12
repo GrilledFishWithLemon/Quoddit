@@ -23,12 +23,12 @@ class User {
         return profileBio
     }
     fun setProfileBio(profileBio: String){
-        this.profileBio = username
+        this.profileBio = profileBio
     }
     fun getUid() : String{
         return uid
     }
     fun setUid(uid : String) {
-        this.uid
+        this.uid = uid
     }
 }

@@ -49,6 +49,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_bio_tvt" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_bio_tvt"
+      />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

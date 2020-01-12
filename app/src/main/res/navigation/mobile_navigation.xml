@@ -11,6 +11,11 @@
         android:label="@string/title_home"
         tools:layout="@layout/fragment_home" />
     <fragment
+        android:id="@+id/navigation_searchUser"
+        android:name="com.example.quoddit.SearchUserFragment"
+        android:label="searchUser_fragment"
+        tools:layout="@layout/fragment_search_user" />
+    <fragment
         android:id="@+id/navigation_profile"
         android:name="com.example.quoddit.ProfileFragment"
         android:label="profile_fragment"

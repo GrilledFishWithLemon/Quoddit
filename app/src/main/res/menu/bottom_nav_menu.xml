@@ -5,11 +5,17 @@
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
         android:title="@string/title_home" />
+    <item
+        android:id="@+id/navigation_searchUser"
+        android:icon="@drawable/ic_search_black_46dp"
+        android:title="@string/searchUser" />
 
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_account_circle_black_46dp"
         android:title="@string/title_profile" />
+
+
 
 
 

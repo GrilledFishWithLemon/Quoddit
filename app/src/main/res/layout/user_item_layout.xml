@@ -11,6 +11,17 @@
         android:layout_centerHorizontal="true"
         android:background="@drawable/button_black_background"
         >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView_searchProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/profile">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
         <TextView
             android:id="@+id/user_name_search"
             android:layout_width="match_parent"
@@ -19,7 +30,8 @@
             android:gravity="center"
             android:textSize="16dp"
             android:textStyle="bold"
-            android:textColor="@color/colorPrimary" />
+            android:textColor="@color/colorPrimary"
+            android:layout_below="@id/circleImageView_searchProfile"/>
 
         <TextView
             android:id="@+id/user_bio_search"

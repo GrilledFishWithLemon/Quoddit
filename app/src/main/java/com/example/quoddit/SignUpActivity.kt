@@ -45,7 +45,7 @@ class SignUpActivity : AppCompatActivity() {
                 mAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener{task ->
                         if (task.isSuccessful){
-                            saveUserInfo(email, userName, password )
+                            saveUserInfo(email, userName, password)
                         }
                         else{
                             val message = task.exception!!.toString()
@@ -68,6 +68,7 @@ class SignUpActivity : AppCompatActivity() {
         userMap["email"] = email
         userMap["password"] = password
         userMap["profileBio"] = "this is my bio."
+        userMap["profileImage"] = "https://firebasestorage.googleapis.com/v0/b/quoddit-e074f.appspot.com/o/Default%20Image%2F587674503157514241.png?alt=media&token=99159a99-9a0e-4182-b2fd-778ac44bf70c"
 
         usersRef.child(currentUserID).setValue(userMap)
             .addOnCompleteListener{task ->

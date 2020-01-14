@@ -43,6 +43,28 @@
 
             </RelativeLayout>
         </androidx.appcompat.widget.Toolbar>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circleImageView_profileSettings"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/profile">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+        <TextView
+            android:id="@+id/change_image_textViewButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Change Image"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="6dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimary">
+        </TextView>
+
         <EditText
             android:id="@+id/userName_profile_frag"
             android:layout_width="match_parent"

@@ -16,6 +16,7 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
+import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.profile_fragment.view.*
 
 
@@ -66,6 +67,7 @@ class ProfileFragment : Fragment() {
                 }*/
                 if(p0.exists()){
                     val user = p0.getValue<User>(User::class.java)
+                    Picasso.get().load(user!!.getProfileImage()).placeholder(R.drawable.profile).into(view?.circleImageView_profilefrag)
                     view?.profile_name?.text = user!!.getUsername()
                     view?.profile_bio_tvt?.text = user!!.getProfileBio()
                 }

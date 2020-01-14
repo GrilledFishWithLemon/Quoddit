@@ -12,29 +12,46 @@
         android:id="@+id/profile_name"
         android:layout_width="250dp"
         android:layout_height="50dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginEnd="106dp"
-        android:layout_marginBottom="37dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="96dp"
         android:text="@string/profile_name"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/profile_bio_tvt"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circleImageView_profilefrag"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView_profilefrag"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="65dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toTopOf="@+id/profile_bio_tvt"
+        app:layout_constraintEnd_toStartOf="@+id/profile_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
 
     <TextView
         android:id="@+id/profile_bio_tvt"
         android:layout_width="281dp"
         android:layout_height="88dp"
         android:layout_marginStart="55dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="75dp"
         android:layout_marginBottom="15dp"
         android:text="@string/profilebio_tv"
         app:layout_constraintBottom_toTopOf="@+id/btn_editProfile"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profile_name" />
 
@@ -48,8 +65,8 @@
         android:text="@string/editProfile"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/profile_bio_tvt"
-      />
+        app:layout_constraintTop_toBottomOf="@+id/profile_bio_tvt" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

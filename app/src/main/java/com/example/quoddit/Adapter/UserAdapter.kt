@@ -12,6 +12,9 @@ import com.example.quoddit.Model.User
 import com.example.quoddit.ProfileFragment
 import com.example.quoddit.R
 import com.google.firebase.auth.FirebaseUser
+import com.squareup.picasso.Picasso
+import de.hdodenhof.circleimageview.CircleImageView
+import org.w3c.dom.Text
 
 
 class UserAdapter (private  var mContext: Context,
@@ -29,6 +32,7 @@ class UserAdapter (private  var mContext: Context,
 
     override fun onBindViewHolder(holder: UserAdapter.ViewHolder, position: Int) {
         var user = mUser[position]
+        Picasso.get().load(user.getProfileImage()).placeholder(R.drawable.profile).into(holder.userProfileImage)
         holder.userNameTextView.text = user.getUsername()
         holder.userBioTextView.text = user.getProfileBio()
 
@@ -45,6 +49,7 @@ class UserAdapter (private  var mContext: Context,
     class ViewHolder (@NonNull itemView: View) : RecyclerView.ViewHolder(itemView) {
         var userNameTextView: TextView = itemView.findViewById(R.id.user_name_search)
         var userBioTextView: TextView = itemView.findViewById(R.id.user_bio_search)
+        var userProfileImage: CircleImageView = itemView.findViewById(R.id.circleImageView_searchProfile)
     }
 
 }

@@ -63,26 +63,7 @@ class AddPostActivity : AppCompatActivity()
         val profileId = FirebaseAuth.getInstance().currentUser!!.uid
         val user = FirebaseAuth.getInstance().currentUser
         val usersRef = FirebaseDatabase.getInstance().getReference().child("Users").child(profileId)
-        var username:String = ""
-
-
-        usersRef.addValueEventListener(object : ValueEventListener {
-
-            override fun onDataChange(p0: DataSnapshot) {
-                /* if(context != null){
-                     return
-                 }*/
-                if (p0.exists()) {
-                    val userM = p0.getValue<User>(User::class.java)
-                    username = userM!!.getUsername()
-                }
-            }
-
-            override fun onCancelled(p0: DatabaseError) {
-
-            }
-        })
-
+        var username = ""
 
 
 

@@ -41,7 +41,9 @@ class ProfileSettings : AppCompatActivity() {
 
         firebaseUser = FirebaseAuth.getInstance().currentUser!!
         storageProfilePicRef = FirebaseStorage.getInstance().reference.child("Profile Pictures")
-
+        close_profileSettings_btn.setOnClickListener{
+            finish()
+        }
         logout_btn_profile_frag.setOnClickListener {
 
             FirebaseAuth.getInstance().signOut()

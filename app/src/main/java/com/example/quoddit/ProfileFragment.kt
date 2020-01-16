@@ -53,6 +53,10 @@ class ProfileFragment : Fragment() {
             startActivity(Intent(context,ProfileSettings::class.java))
         }
 
+        view.buttonSettings.setOnClickListener{
+            startActivity(Intent(context,SettingsActivity::class.java))
+        }
+
         userInfo()
 
         return view

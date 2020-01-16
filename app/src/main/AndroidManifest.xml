@@ -12,8 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CommentPost"></activity>
-        <activity android:name=".AddCommentActivity"></activity>
+        <activity android:name=".SettingsActivity"></activity>
+        <activity android:name=".CommentPost" />
+        <activity android:name=".AddCommentActivity" />
         <activity android:name=".CommentActivity" />
         <activity android:name=".ProfileSettings" />
         <activity android:name=".SignUpActivity" />

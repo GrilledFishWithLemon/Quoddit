@@ -60,4 +60,14 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password_login" />
+
+    <Button
+        android:id="@+id/btnUserForgotPass"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/forgotpassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

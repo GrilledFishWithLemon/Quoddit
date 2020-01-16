@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="10dp"
-    android:layout_marginBottom="20dp">
+    android:layout_marginBottom="20dp"
+    android:background="?attr/backgroundColor">
 
     <TextView
         android:layout_width="match_parent"
@@ -14,6 +15,7 @@
         android:text="Post"
         android:textSize="25dp"
         android:textStyle="bold"
+        android:textColor="?attr/textColor"
         >
 
     </TextView>
@@ -27,6 +29,7 @@
         android:text="User ID"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
+        android:textColor="?attr/textColor"
         >
 
     </TextView>
@@ -39,6 +42,7 @@
         android:text="Post date"
         android:paddingBottom="5dp"
         android:paddingTop="5dp"
+        android:textColor="?attr/textColor"
         >
 
     </TextView>
@@ -51,6 +55,7 @@
         android:text="Post id"
         android:paddingBottom="5dp"
         android:paddingTop="5dp"
+        android:textColor="?attr/textColor"
         >
 
     </TextView>
@@ -63,7 +68,9 @@
         android:textSize="18dp"
         android:text="Post content"
         android:paddingTop="5dp"
-        android:paddingBottom="5dp">
+        android:paddingBottom="5dp"
+        android:textColor="?attr/textColor">
+
 
     </TextView>
 
@@ -89,7 +96,8 @@
             android:layout_toRightOf="@+id/upvote_button"
             android:layout_centerVertical="true"
             android:paddingLeft="20dp"
-            android:paddingRight="20dp">
+            android:paddingRight="20dp"
+            android:textColor="?attr/textColor">
 
         </TextView>
 

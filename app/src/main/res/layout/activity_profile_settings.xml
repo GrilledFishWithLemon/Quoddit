@@ -4,6 +4,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
     tools:context=".ProfileSettings">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -62,7 +63,7 @@
             android:layout_margin="6dp"
             android:textStyle="bold"
             android:textSize="16dp"
-            android:textColor="@color/colorPrimary">
+            android:textColor="?attr/textColor">
         </TextView>
 
         <EditText
@@ -73,6 +74,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:inputType="text"
+            android:textColor="?attr/textColor"
             android:hint="User Name"/>
 
         <EditText
@@ -83,6 +85,7 @@
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
             android:inputType="text"
+            android:textColor="?attr/textColor"
             android:hint="Bio"/>
 
         <Button
@@ -94,6 +97,7 @@
             android:layout_marginLeft="20dp"
             android:layout_above = "@+id/deleteAcc_btn_profile_frag"
             android:text="@string/logout"
+            android:background="?attr/buttonColor"
             />
         <Button
             android:id="@+id/deleteAcc_btn_profile_frag"
@@ -104,7 +108,7 @@
             android:layout_marginLeft="20dp"
             android:layout_alignParentBottom ="true"
             android:text="@string/delete_account_btn_profile_frag"
-            android:background="@color/colorPrimary"
+            android:background="?attr/buttonColor"
             android:textColor="@android:color/white"
             />
     </com.google.android.material.appbar.AppBarLayout>

@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Quoddit</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
-    <string name="email_signin">Enter Your Email</string>
-    <string name="password_signin">Enter Your Password</string>
-    <string name="btn_signin">Sign In</string>
-    <string name="btn_signup_signin">Need New Account? Sign Up</string>
-    <string name="btn_signup_signup">Register</string>
+    <string name="title_home">Rumah</string>
+    <string name="title_dashboard">Papan Pemuka</string>
+    <string name="title_notifications">Pemberitahuan</string>
+    <string name="email_signin">Masukkan emel anda</string>
+    <string name="password_signin">Masukkan kata laluan anda</string>
+    <string name="btn_signin">Masuk</string>
+    <string name="btn_signup_signin">Perlu Akaun Baru? Daftar</string>
+    <string name="btn_signup_signup">Daftar</string>
     <string name="email_signup">E-Mail</string>
-    <string name="password_signup">Password</string>
-    <string name="btn_signin_signup">Already Have An Account? Sign In Here</string>
-    <string name="username_signup">UserName</string>
-    <string name="logout">LOGOUT</string>
-    <string name="delete_account_btn_profile_frag">DELETE ACCOUNT</string>
-    <string name="title_profile">Profile</string>
+    <string name="password_signup">Kata laluan</string>
+    <string name="btn_signin_signup">Sudah mempunyai akaun? Masuk Di Sini</string>
+    <string name="username_signup">Nama Pengguna</string>
+    <string name="logout">LOG KELUAR</string>
+    <string name="delete_account_btn_profile_frag">Padam Akaun</string>
+    <string name="title_profile">Profil</string>
     <string name="profile_name">USERNAME</string>
-    <string name="profilebio_tv">Profile Bio</string>
-    <string name="editProfile">Edit Profile</string>
-    <string name="error_value_required">Value is required</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="searchUser">Search User</string>
+    <string name="profilebio_tv">Profil Bio</string>
+    <string name="editProfile">Sunting  Profile</string>
+    <string name="error_value_required">Nilai diperlukan</string>
+    <string name="hello_blank_fragment">Hancurkan serpihan kosong</string>
+    <string name="searchUser">Pengguna Carian</string>
     <string name="url_server">https://shumy.000webhostapp.com/api/</string>
     <string name="url_comments_readLatest">comments/readLatest.php</string>
     <string name="url_comment_create">comments/create.php</string>
 
     //Settings
     <string name="settings">Settings</string>
-    <string name="forgotpassword">Forgot Password</string>
-    <string name="changePassword">Change Password</string>
-    <string name="changeLanguage">Language</string>
-    <string name="nightMode">Enable Dark Theme</string>
-    <string name="currentPassword">Current Password</string>
-    <string name="newPassword">New Password</string>
-    <string name="confirmPassword">Confirm Password</string>
+    <string name="forgotpassword">Lupa kata laluan</string>
+    <string name="changePassword">Tukar kata laluan</string>
+    <string name="changeLanguage">Bahasa</string>
+    <string name="nightMode">Dayakan Tema Gelap</string>
+    <string name="currentPassword">Kata Laluan Semasa</string>
+    <string name="newPassword">Kata laluan baharu</string>
+    <string name="confirmPassword">Sahkan Kata Laluan</string>
 </resources>

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="5dp"
+    android:background="?attr/backgroundColor"
     tools:context=".CommentActivity">
 
     <TextView
@@ -27,7 +28,8 @@
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewPostID"
-        tools:text="postID" />
+        tools:text="postID"
+        android:textColor="?attr/textColor"/>
 
     <TextView
         android:id="@+id/textViewUser"
@@ -35,7 +37,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewTitle"
-        tools:text="UID" />
+        tools:text="UID"
+        android:textColor="?attr/textColor"/>
 
     <TextView
         android:id="@+id/textViewDate"
@@ -43,7 +46,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewUser"
-        tools:text="date" />
+        tools:text="date"
+        android:textColor="?attr/textColor"/>
 
     <TextView
         android:id="@+id/textViewPostID"
@@ -52,7 +56,8 @@
         android:visibility="invisible"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewDate"
-        tools:text="postID" />
+        tools:text="postID"
+        android:textColor="?attr/textColor"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewComment"

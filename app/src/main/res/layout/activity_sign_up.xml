@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
     tools:context=".SignUpActivity">
     <EditText
         android:id="@+id/usernameSignup"
@@ -12,6 +13,7 @@
         android:layout_marginBottom="20dp"
         android:hint="@string/username_signup"
         android:inputType="textEmailAddress"
+        android:textColor="?attr/textColor"
         app:layout_constraintBottom_toTopOf="@+id/password_signup"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -30,7 +32,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_register"
+        android:background="?attr/buttonColor"/>
 
     <Button
         android:id="@+id/btn_register"
@@ -43,7 +46,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password_signup" />
+        app:layout_constraintTop_toBottomOf="@+id/password_signup"
+        android:background="?attr/buttonColor"/>
 
     <EditText
         android:id="@+id/email_signup"
@@ -57,7 +61,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="?attr/textColor"/>
 
     <EditText
         android:id="@+id/password_signup"
@@ -70,5 +75,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/usernameSignup" />
+        app:layout_constraintTop_toBottomOf="@+id/usernameSignup"
+        android:textColor="?attr/textColor"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

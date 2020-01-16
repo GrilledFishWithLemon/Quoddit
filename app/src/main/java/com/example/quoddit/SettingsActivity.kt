@@ -116,10 +116,10 @@ class SettingsActivity : AppCompatActivity() {
                 setLocate("en")
                 recreate()
             } else if (which == 1) {
-                setLocate("b+ace")
+                setLocate("ms-rMY")
                 recreate()
             } else if (which == 2) {
-                setLocate("ms")
+                setLocate("zh")
                 recreate()
             }
 

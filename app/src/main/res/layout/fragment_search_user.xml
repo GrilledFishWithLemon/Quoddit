@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SearchUserFragment">
 
@@ -42,9 +43,9 @@
                     android:layout_marginRight="19dp"
                     android:layout_marginStart="15dp"
                     android:layout_marginEnd="15dp"
-                    android:textColor="@color/colorPrimary"
                     android:hint="Search..."
                     android:layout_toEndOf="@id/search_icon"
+                    android:textColor="?attr/textColor"
                     />
 
             </RelativeLayout>

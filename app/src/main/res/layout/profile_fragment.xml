@@ -5,6 +5,7 @@
     android:id="@+id/profile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
     tools:context=".ProfileFragment">
 
 
@@ -19,6 +20,7 @@
         android:text="@string/profile_name"
         android:textSize="20sp"
         android:textStyle="bold"
+        android:textColor="?attr/textColor"
         app:layout_constraintBottom_toTopOf="@+id/profile_bio_tvt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/circleImageView_profilefrag"
@@ -49,6 +51,7 @@
         android:layout_marginEnd="75dp"
         android:layout_marginBottom="15dp"
         android:text="@string/profilebio_tv"
+        android:textColor="?attr/textColor"
         app:layout_constraintBottom_toTopOf="@+id/btn_editProfile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -63,6 +66,7 @@
         android:layout_marginEnd="67dp"
         android:layout_marginBottom="300dp"
         android:text="@string/editProfile"
+        android:background="?attr/buttonColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -75,6 +79,7 @@
         android:layout_height="39dp"
         android:layout_marginTop="24dp"
         android:text="@string/settings"
+        android:background="?attr/buttonColor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_editProfile" />

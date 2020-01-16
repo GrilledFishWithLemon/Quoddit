@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/backgroundColor"
     tools:context=".AddPostActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -66,6 +67,7 @@
             android:hint="Give a title to your post."
             android:layout_margin="5dp"
             android:maxLines="2"
+            android:textColor="?attr/textColor"
             />
 
         <EditText
@@ -75,6 +77,7 @@
             android:hint="Write something..."
             android:layout_margin="5dp"
             android:maxLines="6"
+            android:textColor="?attr/textColor"
             />
 
     </androidx.appcompat.widget.LinearLayoutCompat>

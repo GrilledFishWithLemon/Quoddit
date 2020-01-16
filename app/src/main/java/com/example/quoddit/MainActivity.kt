@@ -1,5 +1,6 @@
 package com.example.quoddit
 
+import android.content.SharedPreferences
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
@@ -15,6 +16,15 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //To set theme
+        val sharedpref: SharePref = SharePref(this)
+
+        if (sharedpref.loadNightModeState() == true){
+            setTheme(R.style.darkTheme)
+        } else
+            setTheme(R.style.AppTheme)
+
         setContentView(R.layout.activity_main)
         val navView: BottomNavigationView = findViewById(R.id.nav_view)
 

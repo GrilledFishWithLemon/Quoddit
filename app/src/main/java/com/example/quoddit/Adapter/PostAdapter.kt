@@ -61,7 +61,7 @@ class PostAdapter (val context: Context, val PostList: ArrayList<Post>)
         {
             postTitle?.text = post.title
             postContent?.text = post.content
-            postUsername?.text = post.uid
+            postUsername?.text = post.username
             postDate?.text = post.date.toString()
             postId?.text = post.postId
 

@@ -6,5 +6,6 @@ data class Post(
     val title: String? = null,
     val content: String? = null,
     val date: Long? = null,
-    val uid: String? = null
+    val uid: String? = null,
+    val username: String? = null
 )

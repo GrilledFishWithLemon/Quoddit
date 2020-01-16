@@ -68,6 +68,7 @@ class AddPostActivity : AppCompatActivity()
 
 
 
+
         if (title.isEmpty())
         {
             postTitle.error = "Please enter a title."

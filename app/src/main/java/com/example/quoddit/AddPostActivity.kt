@@ -36,6 +36,15 @@ class AddPostActivity : AppCompatActivity()
         firebaseUser = FirebaseAuth.getInstance().currentUser!!
 
         super.onCreate(savedInstanceState)
+
+        //To set theme
+        val sharedpref: SharePref = SharePref(this)
+
+        if (sharedpref.loadNightModeState() == true){
+            setTheme(R.style.darkTheme)
+        } else
+            setTheme(R.style.AppTheme)
+
         setContentView(R.layout.activity_add_post)
 
         postTitle = findViewById(R.id.post_title)

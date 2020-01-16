@@ -20,6 +20,15 @@ class ChangePassword : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //To set theme
+        val sharedpref: SharePref = SharePref(this)
+
+        if (sharedpref.loadNightModeState() == true){
+            setTheme(R.style.darkTheme)
+        } else
+            setTheme(R.style.AppTheme)
+
         setContentView(R.layout.activity_change_password)
 
         firebaseAuth = FirebaseAuth.getInstance().currentUser!!

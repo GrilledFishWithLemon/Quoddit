@@ -12,6 +12,15 @@ class CommentPost : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        //To set theme
+        val sharedpref: SharePref = SharePref(this)
+
+        if (sharedpref.loadNightModeState() == true){
+            setTheme(R.style.darkTheme)
+        } else
+            setTheme(R.style.AppTheme)
+
         setContentView(R.layout.recycler_view_post_layout)
 
         val postIdString = intent.getStringExtra("postId")

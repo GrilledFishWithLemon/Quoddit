@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.quoddit.AddCommentActivity
+import com.example.quoddit.CommentActivity
 import com.example.quoddit.CommentPost
 import com.example.quoddit.Model.Post
 import com.example.quoddit.R
@@ -30,7 +32,7 @@ class PostAdapter (val context: Context, val PostList: ArrayList<Post>)
         holder?.bind(PostList[position], context)
 
         holder.commentbutton?.setOnClickListener {
-            val intent = Intent(context, CommentPost::class.java)
+            val intent = Intent(context, CommentActivity::class.java)
             intent.putExtra("postId", PostList[position].postId)
             intent.putExtra("postTitle", PostList[position].title)
             intent.putExtra("postContent", PostList[position].content)

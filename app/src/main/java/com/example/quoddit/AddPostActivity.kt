@@ -66,10 +66,11 @@ class AddPostActivity : AppCompatActivity()
 
         if (postId != null) {
             ref.child(postId).setValue(post).addOnCanceledListener {
+                Toast.makeText(this, "Post saved successfully.", Toast.LENGTH_LONG).show()
                 val intent = Intent(this@AddPostActivity, MainActivity::class.java)
                 startActivity(intent)
                 finish()
-                Toast.makeText(this, "Post saved successfully.", Toast.LENGTH_LONG).show()
+
 
 
     }

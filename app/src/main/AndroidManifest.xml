@@ -13,6 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".CommentPost"></activity>
+        <activity android:name=".AddCommentActivity"></activity>
+        <activity android:name=".CommentActivity" />
         <activity android:name=".ProfileSettings" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".SignInActivity">
